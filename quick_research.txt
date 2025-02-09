@@ -6,3 +6,63 @@ Recommendation.
 
 how to solve this problem?
 
+Problem Statement:
+The project aims to investigate the relationship between news sentiment and stock price movements across multiple companies. By analyzing historical news headlines and corresponding stock price data, the objective is to determine whether:
+
+- Positive news sentiment correlates with upward trends in stock prices,
+
+- Negative news sentiment correlates with downward trends in stock prices,
+
+- Neutral news sentiment correlates with no significant price movement.
+
+The analysis seeks to quantify the directional impact of news on financial markets, enabling data-driven insights into how public information influences investor behavior and stock valuation.
+
+
+Expected Data Behavior:
+News Headlines:
+
+Each headline is tagged with a date, company name, and sentiment score (positive, negative, or neutral).
+Example: A headline like “TechCorp unveils revolutionary AI product” is classified as positive, while “GlobalBank fined $1B for regulatory violations” is labeled negative.
+
+Stock Prices:
+
+Daily stock price data (open, close, volume, etc.) for the same companies, aligned by date.
+
+Example: A positive news headline on Jan 15 should align with the stock’s closing price movement on Jan 15 or the following trading day.
+
+Correlation Patterns:
+
+Positive Sentiment: Expected to precede short-term stock price increases (e.g., higher closing prices or percentage gains).
+
+Negative Sentiment: Expected to precede short-term stock price declines (e.g., lower closing prices or percentage losses).
+
+Neutral Sentiment: Expected to show no statistically significant price movement compared to market baselines.
+
+
+Analytical Focus:
+Temporal Alignment: Ensuring precise synchronization between news publication dates and stock price data to capture immediate market reactions.
+
+Sentiment Classification: Using tools like TextBlob or VADER to programmatically classify news sentiment.
+
+
+Statistical Validation:
+
+Measuring correlation strength between sentiment scores and price changes (e.g., Pearson correlation).
+Testing hypotheses (e.g., “Negative news reduces stock returns by X% on average”).
+Noise Filtering: Accounting for external factors (e.g., market-wide trends, earnings reports) that may obscure the direct impact of news.
+
+Challenges to Address:
+Lag Effects: News may take time to influence stock prices (e.g., overnight or over multiple days).
+
+Confounding Variables: Macroeconomic events, sector-specific trends, or unrelated company announcements.
+
+Sentiment Accuracy: Ensuring sentiment analysis models correctly interpret sarcasm, context, or industry-specific jargon.
+
+
+Outcome Goals:
+A clear quantitative framework linking news sentiment to stock price changes.
+Actionable insights for investors, such as identifying companies or sectors where news sentiment has the strongest predictive power.
+Visualizations (e.g., time-series plots, heatmaps) to illustrate correlations between sentiment and price movements.
+
+
+This project seeks to establish a foundational understanding of how news drives market behavior, with applications in algorithmic trading, risk management, and financial forecasting.
